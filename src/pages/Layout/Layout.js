@@ -3,7 +3,7 @@ import Home from "../Home/Home";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="max-w-[90%] mx-auto">
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
