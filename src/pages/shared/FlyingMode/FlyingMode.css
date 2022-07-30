@@ -1,0 +1,14 @@
+.flyingMode {
+  overflow: hidden;
+}
+.flyingMode img {
+  position: relative;
+  display: block;
+
+  transition: 1s ease-in-out;
+}
+
+.flyingMode:hover img {
+  display: block;
+  transform: translateX(999%);
+}

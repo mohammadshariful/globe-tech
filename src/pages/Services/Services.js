@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import FlyingMode from "../shared/FlyingMode/FlyingMode";
+import Loading from "../shared/Loading/Loading";
 import ServiceRow from "./ServiceRow";
 
 const Services = () => {
@@ -19,13 +21,16 @@ const Services = () => {
       });
   }, []);
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loading loading={isLoading} />;
   }
 
   return (
     <section className="text-center max-w-[90%] mx-auto">
-      <h3 className="lg:text-2xl">SERVICES</h3>
-      <h2 className="lg:text-3xl">We provides services to our clients</h2>
+      <FlyingMode />
+      <h3 className="lg:text-2xl font-semibold tracking-widest">SERVICES</h3>
+      <h2 className="lg:text-3xl font-bold tracking-widest">
+        We provides services to our clients
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7 mt-10">
         {services.map((service) => (
           <ServiceRow key={service.id} service={service} />

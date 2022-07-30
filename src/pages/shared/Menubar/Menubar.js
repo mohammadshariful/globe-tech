@@ -39,7 +39,7 @@ const Menubar = () => {
         <img className="w-36" src={logo} alt="logo" />
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal bg-blue-900 p-0">{menu}</ul>
+        <ul className="menu menu-horizontal p-0">{menu}</ul>
       </div>
     </div>
   );
