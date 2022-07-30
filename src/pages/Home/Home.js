@@ -7,7 +7,7 @@ const Home = () => {
     setImg(img2);
   };
   return (
-    <div class="h-screen flex flex-col sm:flex-row justify-between items-center gap-y-4">
+    <div className="h-screen max-w-[90%] mx-auto flex flex-col sm:flex-row justify-between items-center gap-y-4">
       <div className="w-full sm:w-1/2">
         <h1 className="text-xl lg:text-6xl sm:mb-4">
           Welcome to <br /> <span className="text-warning">GlobeTech</span>
